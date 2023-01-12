@@ -1,0 +1,599 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'CLEANVEL';
+}
+
+*.flex_mod{
+    display: flex;
+    flex-direction: column;
+}
+:root{
+    --index:calc(1vw + 1vh);
+}
+@font-face {
+    font-family:"CLEANVEL";
+    src:url("fonts/CLEANVEL.TTF");
+    font-display: swap;
+    font-style: normal;
+}
+
+
+#btn_up{
+    display: none;
+    position: fixed;
+    top: 500px;
+    right: 40px;
+    z-index: 25;
+    cursor: pointer;
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+
+.nav_menu_fon{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(4, 4, 4);
+    opacity: 0.8;
+    z-index: 26;
+}
+aside{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 720px;
+    background-color: rgb(243 243 246);
+    transition: left 1s;
+    z-index: 27;
+}
+.cotacts_posit{
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+} .cotacts_posit ul a li{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    margin-top: 15px;
+} .cotacts_posit ul a li:hover{
+    border-bottom: 2px solid;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+#logMenu22 {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    z-index: 1;
+    cursor: pointer;
+    width:40px;
+    height:40px;
+}
+#close_blMenu{
+    position: relative;
+    top: -100px;
+    left: 80%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+.Main_page{
+    width: 100%;
+    z-index: 1; 
+}
+
+.Block1{
+    width: 100%;
+    height: 800px;
+}
+.fon {
+    display: flex;
+    align-items:center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(270deg, white, rgb(136, 136, 136));
+    z-index: 3;
+    opacity:0;
+    transition: opacity 10s;
+}
+
+#big_foto_mers{
+    position: absolute;
+    top: 300px;
+    left: 4%;
+    width: 53%;
+}
+
+#logo{
+    position: absolute;
+    top: 0px;
+    left: 45%;
+}
+#logo_menu{
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.contacts{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 40px;
+    left: 80%;
+    width: 263px;
+    height: 97px;
+}
+.link_soc{
+    justify-content: space-between;
+}
+.link_soc img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.wrap_block_car{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 100%;
+    height: 500px;
+}
+
+.block_car{
+    justify-content: space-between;
+    width: 50%;
+    height: 555px;
+}
+.text_car{
+    text-align: center;
+    align-self:center;
+    font-size: calc(var(--index) * 2);
+}
+.block_info_car{
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 350px;
+}
+
+
+.wrap_znack{
+    display: flex;
+    background-color: rgb(202, 201, 201);
+    border-radius: 56px;
+    width: 250px;
+    padding: 8px;
+} .wrap_znack p{
+    margin-left: 20px;
+    font-size: 20px;
+} .wrap_znack img{
+  width: 60px;
+} .wz1{
+    align-self:flex-start;
+} .wz3{
+    align-self: flex-end;
+}
+
+
+.DOP_block_info_car{  /*------- дополн. блок ---*/
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 165px;
+}
+
+.DOP_znack{
+        align-items: center;
+        padding: 10px;
+        width: 140px;
+        height: 90px;
+        font-size: calc(var(--index) * 1.2);
+}
+.znak{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#btn_back, #btn_back2{
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(129, 29, 29);
+    color: white;
+    cursor: pointer;
+    transition: background 1s;
+}#btn_back:hover, #btn_back2:hover{
+    background-color: rgb(38, 31, 31);
+}
+#btn_down{
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    animation-name:str_down;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes str_down{
+    from{}
+    to{bottom: 75px;}
+}
+
+
+/*------------------------------------*/
+
+
+.Block_video{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.video_Mers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}    
+.video_Mers video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+
+/*------------------------------------*/
+
+
+.Block_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 760px;
+    background-color:black;
+    color: white;
+}
+
+.h_1{
+    padding-top: 20px;
+    font-size: calc(var(--index) * 2);
+    font-weight: normal;
+}
+.Slider_block{
+    width: 83%;
+    height: 650px;
+    overflow: hidden;
+} 
+.slidelist{
+    display: flex;
+    width: 435%;
+    height: 100%;
+} 
+.slide{
+    width: 26%;
+    transition: all 0.5s ease;
+}
+
+#foto_car_1, #foto_car_2, #foto_car_3{
+    width: 96%;
+    height: 650px;
+}
+
+
+
+.slide p, p[name="tx_1"]{
+   position: relative;
+   top: -95%;
+   left: 6%;
+   font-size: calc(var(--index) * 1);
+   width: 46%;
+}
+p[name="tx_1"]{
+    top: -90%;
+    font-size: calc(var(--index) * 1.5);
+    font-weight: bold;
+color: black;
+ }
+
+
+
+ /*-----------------------------------------------------------------------*/
+
+
+
+
+.Main_page_2{
+    width: 100%;
+    z-index: 1; 
+}
+
+
+.Block_3{
+    justify-content: space-around;
+    width: 100%;
+    height: 1300px;
+    background-color: black;
+    z-index: 1;
+}
+.Block_3 p[name="block3_text"]{
+    text-align:center;
+    align-self: center;
+    font-size: 30px;
+    color: white;
+    border-bottom: 1px solid;
+}
+
+.mini_block_3{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+}
+
+.mini_block_3 div p{
+    font-size: 18px;
+    width: 90%;
+    height: 300px;
+}
+
+
+
+.mini_block_left, .mini_block_right{
+    justify-content: space-around;
+    align-items: center;
+    width: 49%;
+    height: 500px;
+    border-right: 1px solid;
+    color: white;
+}
+.mini_block_right{
+   border: none;
+}
+.mini_block_left p span, .mini_block_right p span{
+    font-size: 21px;
+}
+.mini_block_left img{
+    width: 400px;
+    height: 275px;
+}
+.mini_block_right img{
+    width: 400px;
+    height: 250px;
+}
+
+.fara_block{
+ align-self: center;
+   width: 55%;
+    height: 465px;
+}
+.fara_block img{
+    width: 100%;
+    border-radius: 20px;
+}
+.fara_block p{
+  margin: 10px 80px;
+   color: white;
+   font-size: 20px;
+   width: 65%;
+}
+p[name="textfara"]{
+    margin: -180px 30px;
+    color: white;
+    font-size: calc(var(--index) * 0.9);
+    width: 95%;
+ }
+ 
+
+/*-----------------------------------------*/
+
+
+.Block_4{
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    background-color: #fefafa;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.h_2{ /* Другие модели*/
+    position: relative;
+    top: 0px;
+    left: 0%;
+    font-size: calc(var(--index) * 1.4);
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+    background-color: #262525;
+    height: 65px;
+    color: white;
+    padding-top: 10px;
+}
+
+
+
+.btn_group{
+    position: relative;
+    top: -50px;
+    left:0%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.btn_group img{
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+.wrap_slider{
+    position: relative;
+    top: 10px;
+    left:0%;
+    display: flex;
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+
+.slider_line{
+    position: relative;
+    left: 0%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 150px;
+}
+
+#foto1{
+    width: 600px;
+    height: 270px;
+}
+#foto2{
+    width: 600px;
+    height: 270px;
+}
+#foto3{
+    width: 400px;
+    height: 270px;
+}
+
+.block{
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 33%;
+    height: 245px;
+}
+.bl1{
+    left: -42%;
+}
+.bl2{
+    left: 0%;
+}
+.bl3{
+    left: 57%;
+}
+.block p{
+    text-align: center;
+    width: 280px;
+}
+.btnmod{
+    position: absolute;
+    top: 280px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius:10px;
+    background-color: rgb(14, 15, 15);
+    color: white;
+    transition: background 1s;
+    cursor: pointer;
+} .btnmod:hover{
+    background-color: rgb(248, 250, 250);
+    color: rgb(7, 7, 7);
+    border: 1px solid;
+}
+
+
+/*-----------------------------------*/
+
+
+.Block_foter{
+    width: 100%;
+    height: 300px;
+    color: white;
+}
+.bl_foto_1 p[name="benztext"]{
+    font-size: 13px;
+    border: none;
+}
+.bl_footer_1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    font-size: 16px;
+}
+.bl_footer_1 p{
+    border-bottom:1px solid red;
+    font-size: 18px;
+}
+.footer_contacts{
+    width: 230px;
+    height: 150px;
+}
+.bl_foto_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 150px;
+}
+#logo_footer1{
+    width: 50%;
+}
+#logo_footer2{
+    width: 70px;
+    height: 70px;
+}
+
+
+
+.bl_footer_2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(33, 32, 32);
+    font-size: 16px;
+}
+.bl_footer_2 p{
+    font-size: 16px;
+}
+#bank2{
+    width: 40px;
+    height: 40px;
+}
+
+
+.DOP_footer{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 390px;
+}  
+
